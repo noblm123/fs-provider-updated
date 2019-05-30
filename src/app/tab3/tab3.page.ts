@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Property } from '../models'
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +8,18 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  properties: Array<Property> = [];
+
+  constructor() {
+
+    let property1 = new Property();
+    property1.name = "One";
+
+    let property2 = new Property();
+    property2.name = "Two";
+
+    this.properties.push(property1);
+    this.properties.push(property2);
+  }
 
 }
