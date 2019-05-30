@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>property-details</ion-title>
+    <ion-title *ngIf="currentProperty">{{currentProperty.name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
